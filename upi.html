@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://upi-gateway.example.com/pay" method="POST">
+  <label for="amount">Amount:</label>
+  <input type="number" name="amount" required>
+
+  <label for="mobile">Mobile Number:</label>
+  <input type="tel" name="mobile" pattern="[0-9]{10}" required>
+
+  <label for="upi-id">UPI ID:</label>
+  <input type="text" name="upi-id" required>
+
+  <label for="remarks">Remarks:</label>
+  <input type="text" name="remarks">
+
+  <input type="submit" value="Pay">
+</form>
+
+</body>
+</html>
